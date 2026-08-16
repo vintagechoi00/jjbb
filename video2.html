@@ -1,32 +1,21 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html>
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Video 2</title>
     <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            background: black;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        video {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-        }
+        body, html { margin: 0; padding: 0; width: 100%; height: 100%; background: black; overflow: hidden; }
+        video { width: 100%; height: 100%; object-fit: contain; }
     </style>
 </head>
 <body>
-    <video autoplay muted playsinline loop controls>
+    <video id="v2" autoplay muted playsinline loop>
         <source src="video2.mp4" type="video/mp4">
-        Trình duyệt của bạn không hỗ trợ video này.
     </video>
+    <script>
+        const v = document.getElementById('v2');
+        // Khi chạm vào màn hình, âm thanh sẽ tự bật
+        document.addEventListener('click', () => { v.muted = false; });
+        document.addEventListener('touchstart', () => { v.muted = false; });
+    </script>
 </body>
 </html>
