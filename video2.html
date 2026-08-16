@@ -1,16 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Video 2</title>
     <style>
-        body, html { margin: 0; padding: 0; width: 100%; height: 100%; background: black; }
-        video { width: 100%; height: 100%; object-fit: contain; }
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background: black;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
     </style>
 </head>
 <body>
     <video autoplay muted playsinline loop controls>
-        <!-- Thay tên file video thứ 2 của bạn vào đây -->
-        <source src="TÊN_FILE_VIDEO_THỨ_2.mp4" type="video/mp4">
+        <source src="video2.mp4" type="video/mp4">
+        Trình duyệt của bạn không hỗ trợ video này.
     </video>
 </body>
 </html>
